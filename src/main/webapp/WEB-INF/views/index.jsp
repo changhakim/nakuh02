@@ -346,6 +346,7 @@
 <!-- jeongukjs -->
 <script src="<%=application.getContextPath()%>/resources/js/component/jwcompo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/aquagram/jeonguk.js"></script>  
+<!-- 낚어화이팅 -->
 </body>
 
 <script>
