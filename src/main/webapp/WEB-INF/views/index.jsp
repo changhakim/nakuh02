@@ -62,7 +62,7 @@
                         <!-- section title start-->
                         <h1>Our Services</h1>
                     </div>
-                    <!-- /.section title start-->
+                    <!-- /.section title start--->
                 </div>
             </div>
             <div class="row">
