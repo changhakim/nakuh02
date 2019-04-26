@@ -23,8 +23,8 @@ auth =(()=>{
 				alert('auth.js도착')
 				feed_main();
 				nav();
-				//dfdfdfdf
-				
+	
+	
 			});  
 		
 		
@@ -47,7 +47,34 @@ auth =(()=>{
 			    }
 			  });
 			});
+		$('#my_fv').attr('style','cursor:pointer').click(()=>{
+			alert('클릭!!');
+			$('#donw_content').html(jwcompo.insta_base());
+			let a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+			let box = '';
+			$.each(a,(i,j)=>{
+				box += '<div id="img_'+j+'" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">'
+					+'<div class="photo-box">'
+					+'<div class="image-wrap">'
+					+'<img src="resources/img/aquagram/test_img.jpg">'
+					+'<div class="likes">'+j+' Likes</div>'
+					+'</div>'
+					/*+'<div class="description">'
+					+' Fantastic Architecture #architecture #testing'
+					+'<div class="date">September 16, 2014</div>'
+					+'</div>'*/
+					+'</div>'
+					+'</div>'
+			});
+			$(box).appendTo('#instafeed');
+			$('.photo-box').attr('style','margin:-26px 0px 30px -29px')
 
+			
+		});
+		
+		
+		
+		
 	};
 	let navcss = ()=>{
 		$(document).ready(function() {
@@ -57,9 +84,13 @@ auth =(()=>{
 			  }
 			 });
 		});
-	}
+	};
+	
+	
+	
+	
 	let nav =()=>{
-		/*	네비게이션	*/
+		/*	General 네비게이션	*/
 		$('#home').click(e=>{
 		
 		
@@ -98,6 +129,7 @@ auth =(()=>{
 		});
 	}
 	let css = ()=>{
+		/* head css  */
 		 homecss = '<link class="homecss" rel="stylesheet" type="text/css" href="/web/resources/css/home/homemain.css" />'
 			+'<link class="homecss" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i,700" rel="stylesheet">'
 			+'<link class="homecss" href="/web/resources/css/home/style.css" rel="stylesheet">';
