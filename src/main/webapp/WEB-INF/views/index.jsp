@@ -332,7 +332,7 @@
 <!-- instanavjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/instanav.js"></script>
 <!-- instajs -->
-<!-- Stickyjs -->
+<!-- Stickyjs --->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
 
 <!-- commonjs -->
