@@ -332,6 +332,7 @@
 <!-- instanavjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/instanav.js"></script>
 <!-- instajs -->
+<!-- 안녕클레오파트라 -->
 <!-- Stickyjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
 
