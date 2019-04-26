@@ -14,7 +14,7 @@
 <body>
 
  <div id="wrapper" class="container-fluid">
- <!--  modal -->
+ <!--  modal --->
  <div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
@@ -346,7 +346,7 @@
 <!-- jeongukjs -->
 <script src="<%=application.getContextPath()%>/resources/js/component/jwcompo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/aquagram/jeonguk.js"></script>  
-<!-- 낚어안녕하세-->
+<!-- 낚어안녕 -->
 </body>
 
 <script>
