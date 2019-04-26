@@ -334,7 +334,10 @@
 <!-- instajs -->
 <!-- Stickyjs --->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
+<<<<<<< HEAD
 <!-- 안녕 클레오파트라-->
+=======
+>>>>>>> 2b5ccbefe109e40fa1c4cffd56a3ad6a3bc093f1
 <!-- commonjs -->
 <script src="<%=application.getContextPath()%>/resources/js/app.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/router.js"></script>
@@ -347,6 +350,7 @@
 <!-- jeongukjs -->
 <script src="<%=application.getContextPath()%>/resources/js/component/jwcompo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/aquagram/jeonguk.js"></script>  
+<!-- 낚어화이팅 -->
 </body>
 
 <script>
