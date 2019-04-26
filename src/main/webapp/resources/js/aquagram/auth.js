@@ -23,7 +23,7 @@ auth =(()=>{
 				alert('auth.js도착')
 				feed_main();
 				nav();
-				
+				//dfdfdfdf
 				
 			});  
 		
