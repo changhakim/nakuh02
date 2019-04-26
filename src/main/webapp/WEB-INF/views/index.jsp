@@ -62,7 +62,7 @@
                         <!-- section title start-->
                         <h1>Our Services</h1>
                     </div>
-                    <!-- /.section title start--->
+                    <!-- /.section title start-->
                 </div>
             </div>
             <div class="row">
@@ -292,7 +292,7 @@
     
     <!-- /.footer-->
     <div class="tiny-footer">
-        <!-- tiny footer block --->
+        <!-- tiny footer block -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
@@ -332,12 +332,9 @@
 <!-- instanavjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/instanav.js"></script>
 <!-- instajs -->
-<!-- Stickyjs --->
+<!-- Stickyjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
-<<<<<<< HEAD
-<!-- 안녕 클레오파트라-->
-=======
->>>>>>> 2b5ccbefe109e40fa1c4cffd56a3ad6a3bc093f1
+
 <!-- commonjs -->
 <script src="<%=application.getContextPath()%>/resources/js/app.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/router.js"></script>
@@ -350,7 +347,6 @@
 <!-- jeongukjs -->
 <script src="<%=application.getContextPath()%>/resources/js/component/jwcompo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/aquagram/jeonguk.js"></script>  
-<!-- 낚어화이팅 -->
 </body>
 
 <script>
