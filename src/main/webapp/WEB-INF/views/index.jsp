@@ -292,7 +292,7 @@
     
     <!-- /.footer-->
     <div class="tiny-footer">
-        <!-- tiny footer block -->
+        <!-- tiny footer block --->
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
