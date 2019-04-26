@@ -12,7 +12,6 @@
  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-
  <div id="wrapper" class="container-fluid">
  <!--  modal -->
  <div id="id01" class="modal">
