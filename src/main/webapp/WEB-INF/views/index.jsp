@@ -334,7 +334,7 @@
 <!-- instajs -->
 <!-- Stickyjs --->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
-
+<!-- 안녕 -->
 <!-- commonjs -->
 <script src="<%=application.getContextPath()%>/resources/js/app.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/router.js"></script>
