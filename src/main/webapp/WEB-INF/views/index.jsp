@@ -110,7 +110,7 @@
                             <!-- service content -->
                             <h2><a href="#" class="title">숙박</a></h2>                           
                         </div>
-                        <!-- service content -->
+                        <!-- service content ----->
                     </div>
                     <!-- /.service block -->
                 </div>
