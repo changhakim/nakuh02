@@ -9,8 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class CommonController {
-	private static final Logger logger = LoggerFactory.getLogger(CommonController.class);
+public class HomeController {
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@GetMapping(value="/")
 	public String home(Locale locale,Model model) {
