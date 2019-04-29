@@ -12,15 +12,18 @@
  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 
  <div id="wrapper" class="container-fluid">
  <!--  modal -->
+=======
+<!--  modal -->
+>>>>>>> 5f970e1a35f9bfb36d7f7f6af579f0d365fc6aad
  <div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
       <span class="close1" title="Close Modal">&times;</span>
     </div>
-
     <div class="container-fluid">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" id="userid" required>
@@ -35,6 +38,16 @@
     </div>
   </div>
 </div>
+ <!-- Fullsize Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1"
+		role="dialog" 
+		aria-hidden="true">
+		<div class="modal-dialog modal-fullsize" role="document">
+			<div class="modal-content modal-fullsize"></div>
+		</div>
+	</div>
+ <div id="wrapper" class="container-fluid">
+ 
 <div class="container-fluid">
  <!-- login -->	
  <div id="loginbar"><button id="loginbtn">Login</button></div>

@@ -87,6 +87,7 @@ app=(()=>{
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/animate.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/structure.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/docs.min.css"> '
+			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/modal.css"> '
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/default_css.css">';
 			 
 			 
