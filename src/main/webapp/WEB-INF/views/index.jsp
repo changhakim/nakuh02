@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -715,5 +714,4 @@ app.init('<%= application.getContextPath() %>');
 <script>
 app.init('<%= application.getContextPath() %>');
 </script>
->>>>>>> 5f970e1a35f9bfb36d7f7f6af579f0d365fc6aad
 </html>
