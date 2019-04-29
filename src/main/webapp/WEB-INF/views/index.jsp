@@ -67,7 +67,7 @@
                col-sm-12 col-xs-12">
                     <div class="mb60 text-center section-title">
                         <!-- section title start-->
-                        <h1>Our Services</h1>
+                        <h1>Our Services</h1>                   
                     </div>
                     <!-- /.section title start--->
                 </div>
