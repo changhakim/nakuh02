@@ -15,6 +15,7 @@ public class CommonController {
 	@GetMapping(value="/")
 	public String home(Locale locale,Model model) {
 		logger.info("=========index진입======");
+		
 		return"index";
 	}
 }
