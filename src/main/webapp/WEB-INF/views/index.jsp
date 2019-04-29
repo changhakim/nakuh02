@@ -12,13 +12,7 @@
  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
-
- <div id="wrapper" class="container-fluid">
- <!--  modal -->
-=======
 <!--  modal -->
->>>>>>> 5f970e1a35f9bfb36d7f7f6af579f0d365fc6aad
  <div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
