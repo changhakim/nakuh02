@@ -14,7 +14,7 @@
 <body>
 
  <div id="wrapper" class="container-fluid">
- <!--  modal -->
+ <!--  modal --->
  <div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
