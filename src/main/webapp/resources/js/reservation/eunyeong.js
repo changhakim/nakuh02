@@ -27,7 +27,7 @@ eunyeong = (()=>{
             $('#wrapper').html(eycompo.commonnav())
             $(eycompo.main_search()).appendTo('#wrapper');
             css();
-            navcss();
+            navcss();         
             switch(x){
             case 'ocean':
                 ocean();
@@ -51,6 +51,7 @@ eunyeong = (()=>{
             app.init();
             });
             $('#ocean').click(()=>{
+            	
                 ocean();
             });
             
@@ -156,16 +157,26 @@ eunyeong = (()=>{
               top: 1
               }
              });
-        });
+      $(document).ready(function () { 
+    	  $("#datepicker").datepicker(
+    	            {
+    	                dateFormat: "mm/dd/yy",
+    	                constrainInput: true
+    	   });
+             });
+     
+           });
     };
     
     let css = ()=>{
          homecss ='<link class="homecss" rel="stylesheet" type="text/css" href="/web/resources/css/home/homemain.css" />'
             +'<link class="homecss" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i,700" rel="stylesheet">'
             +'<link class="homecss" href="/web/resources/css/home/style.css" rel="stylesheet">';
+         
          rescss ='<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
+ 
          instacss =' <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/style.css">'
              +' <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/animate.css">'
              +' <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/structure.css">'
