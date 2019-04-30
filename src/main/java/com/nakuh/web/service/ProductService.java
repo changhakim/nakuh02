@@ -10,7 +10,7 @@ import com.nakuh.web.domain.Product;
 @Component
 public interface ProductService {
 	public void createProduct(Product param);
-	public List<Product> findAllProduct(HashMap<String, String> paramMap);
+	public List<Product> findAllProduct();
 	public List<Product> findSomeProducts(HashMap<String, String> paramMap);
 	public Product findProduct(Product param);
 	public int countProduct();
