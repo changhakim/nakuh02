@@ -10,7 +10,7 @@ import com.nakuh.web.domain.Product;
 @Repository
 public interface ProductMapper {
 	public void insertProduct(Product param);
-	public List<Product> selectAllProduct(HashMap<String, String> paramMap);
+	public List<Product> selectAllProduct();
 	public List<Product> selectSomeProducts(HashMap<String, String> paramMap);
 	public Product selectProduct(Product param);
 	public int countProduct();
