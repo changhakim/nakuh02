@@ -15,6 +15,11 @@ eunyeong = (()=>{
         i_ctt = '#item_container';
         onCreate(x);
     }
+    
+    
+    
+    
+    
     let onCreate =(x)=>{
         setContentView(x);
     }
