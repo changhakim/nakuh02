@@ -25,7 +25,7 @@
 var jwcompo = jwcompo || {};
 jwcompo = {
 	commonnav :()=>{
-			return '<nav class="navbar navbar-inverse navbar-default" role="navigation" id="comnav" data-spy="affix" data-offset-top="525" style="width: 100%; height:50px; background-color: #fafafa; border: none; border-bottom: 1px solid; border-color: #ddd; border-radius: 0px; margin-bottom:0px;z-index:9999;">	  '
+			return '<nav class="navbar navbar-inverse navbar-default" role="navigation" id="comnav" data-spy="affix" data-offset-top="525" style="width: 100%; height:50px; background-color: #fafafa; border: none; border-bottom: 1px solid; border-color: #ddd; border-radius: 0px; margin-bottom:0px;z-index:8888;">	  '
 			+'<div class="container-fluid">'
 			+'<ul class="nav navbar-nav">'
 			+'      <li id="home"><a href="#">HOME</a></li>'
@@ -81,7 +81,7 @@ jwcompo = {
 			+'						          <h4>per month</h4>'
 			+'							    	</div>							'
 			+'							    	<div class="input-group" >'
-			+'									     <input style="border: none; background:transparent;" id="email" type="text" class="form-control" name="email" placeholder="댓글입력">'
+			+'									     <input style="border: none; background:transparent;" id="comment" type="text" class="form-control" name="comment" placeholder="댓글입력">'
 			+'									      <span style="border: none; background: transparent;"class="input-group-addon"><p>게시</p></span>   '
 			+'									    </div>'
 			+'									</div>'
@@ -107,7 +107,7 @@ jwcompo = {
 			+'						          <h4>per month</h4>'
 			+'							    	</div>							'
 			+'							    	<div class="input-group" >'
-			+'									      <input style="border: none; background:transparent;" id="email" type="text" class="form-control" name="email" placeholder="댓글입력">'
+			+'									      <input style="border: none; background:transparent;" id="comment" type="text" class="form-control" name="comment" placeholder="댓글입력">'
 			+'									      <span style="border: none; background: transparent;"class="input-group-addon"><p>게시</p></span>   '
 			+'									    </div>'
 			+'									</div>'
@@ -133,7 +133,7 @@ jwcompo = {
 			+'						          <h4>per month</h4>'
 			+'							    	</div>							'
 			+'							    	<div class="input-group" >'
-			+'	    							     <input style="border: none; background:transparent;" id="email" type="text" class="form-control" name="email" placeholder="댓글입력">'
+			+'	    							     <input style="border: none; background:transparent;" id="comment" type="text" class="form-control" name="comment" placeholder="댓글입력">'
 			+'									      <span style="border: none; background: transparent;"class="input-group-addon"><p>게시</p></span>   '
 			+'									    </div>'
 			+'									</div>'
@@ -159,7 +159,7 @@ jwcompo = {
 			+'						          <h4>per month</h4>'
 			+'							    	</div>							'
 			+'							    	<div class="input-group" >'
-			+'	    							     <input style="border: none; background:transparent;" id="email" type="text" class="form-control" name="email" placeholder="댓글입력">'
+			+'	    							     <input style="border: none; background:transparent;" id="comment" type="text" class="form-control" name="comment" placeholder="댓글입력">'
 			+'									      <span style="border: none; background: transparent;"class="input-group-addon"><p>게시</p></span>   '
 			+'									    </div>'
 			+'									</div>'
@@ -185,7 +185,7 @@ jwcompo = {
 			+'						          <h4>per month</h4>'
 			+'							    	</div>							'
 			+'							    	<div class="input-group" >'
-			+'	    							     <input style="border: none; background:transparent;" id="email" type="text" class="form-control" name="email" placeholder="댓글입력">'
+			+'	    							     <input style="border: none; background:transparent;" id="comment" type="text" class="form-control" name="comment" placeholder="댓글입력">'
 			+'									      <span style="border: none; background: transparent;"class="input-group-addon"><p>게시</p></span>   '
 			+'									    </div>'
 			+'									</div>'
@@ -324,13 +324,13 @@ jwcompo = {
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
 			+'		<div>'
 			+'			<div> feed view</div>'
-			+'			<div id="my_fv"> 52 </div>'
+			+'			<div id="feed_fv"> 52 </div>'
 			+'		 </div>'
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
 			+'		<div>'
 			+'			<div> Article count</div>'
-			+'			<div> 4 </div>'
+			+'			<div id="my_fv"> 4 </div>'
 			+'		 </div>'
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
@@ -356,6 +356,16 @@ jwcompo = {
 			+'			<div> 프로필 편집</div>'
 			+'		 </div>'
 			+'		</li>'
+			+'    <li style="position: center; top:15px; margin-right: 25px;">'
+			+'		<div>'
+			+'			<div id="art_upload">등록</div>'
+			+'		 </div>'
+			+'		</li>'
+			+'    <li style="position: center; top:15px; margin-right: 25px;">'
+			+'		<div>'
+			+'			<div>삭제</div>'
+			+'		 </div>'
+			+'		</li>'
 			/*+'    <li style="position: center"><div style="top:10px; left:40px;">feed view</div><div> 64</div></li>'
 			+'    <li style="position: center"><div style="top:10px; left:40px;">Article count</div><div> 4</div></li>'
 			+'    <li style="position: center"><div style="top:10px; left:40px;">Articles</div><div> 4</div></li>'
@@ -367,7 +377,6 @@ jwcompo = {
 			+'  </ul>'
 			
 		},
-		
 		insta_base : ()=>{
 			return '<div class="instagram-wrap">'
 			+'          <div class="container">'
@@ -403,7 +412,7 @@ jwcompo = {
 			+'                          </div>   <!--  target end -->'
 			
 		},
-		
+	
 		photo_feed_css_hover :()=>{
 			return '<style>'
 			+'    @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");'
@@ -512,10 +521,71 @@ jwcompo = {
 				    +'    display: block;'
 				  +'    }'
 				+'    }'
+				+' 				'
 				+'</style>'
 			
-		}
+		},
 		
-			
+		modal_css :()=>{
+			return '<style>'	
+			+'  .modal {'
+			+'    display: none; /* Hidden by default */'
+			+'    position: fixed; /* Stay in place */'
+			+'    z-index: 1; /* Sit on top */'
+			+'    left: 0;'
+			+'    top: 0;'
+			+'    width: 100%; /* Full width */'
+			+'    height: 100%; /* Full height */'
+			+'    overflow: auto; /* Enable scroll if needed */'
+			+'    background-color: rgb(0,0,0); /* Fallback color */'
+			+'    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */'
+			+'  }'
+			+'  '
+			+'  /* Modal Content/Box */'
+			+'  .modal-content {'
+			+'    background-color: #fefefe;'
+			+'    margin: 15% auto; /* 15% from the top and centered */'
+			+'    padding: 20px;'
+			+'    border: 1px solid #888;'
+			+'    width: 80%; /* Could be more or less, depending on screen size */'
+			+'  }'
+			+'  '
+			+'  /* The Close Button */'
+			+'  .close {'
+			+'    color: #aaa;'
+			+'    float: right;'
+			+'    font-size: 28px;'
+			+'    font-weight: bold;'
+			+'  }'
+			+'  '
+			+'  .close:hover,'
+			+'  .close:focus {'
+			+'    color: black;'
+			+'    text-decoration: none;'
+			+'    cursor: pointer;'
+			+'}'
+			+'</style>'
+		},
+		
+		upload_modal :()=>{
+			return ' <div class="modal fade" id="upload_modal" role="dialog">'
+			+'    <div class="modal-dialog">'
+			+'      <!-- Modal content-->'
+			+'      <div class="modal-content">'
+			+'        <div class="modal-header">'
+			+'          <button type="button" class="close" data-dismiss="modal">&times;</button>'
+			+'          <h4 class="modal-title">Modal Header</h4>'
+			+'        </div>'
+			+'        <div class="modal-body">'
+			+'          <p>Some text in the modal.</p>'
+			+'        </div>'
+			+'        <div class="modal-footer">'
+			+'          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'
+			+'        </div>'
+			+'      </div>'
+			+'    </div>'
+			+'  </div>'
+ 		}
+	
 	};
 	
