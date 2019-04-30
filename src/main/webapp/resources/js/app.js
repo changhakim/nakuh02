@@ -93,6 +93,23 @@ app=(()=>{
 			 
 			 
 	}
+	let crawl=()=>{
+		alert('들어옴')
+		 $.ajax({
+			  url:$.ctx()+'/wheater',
+			  type:'get',
+			  data:JSON.stringify(),
+			  dataType:'json',
+			  contentType:'application/json',
+			  success:d=>{
+				  alert('업데이트성공')
+			  },
+			  error:e=>{
+				  alert('업데이트 실패')
+			  }
+			  
+		 })
+	}
 	
 	return {init:init,
 			onCreate:onCreate
