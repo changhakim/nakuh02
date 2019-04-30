@@ -5,11 +5,10 @@ app=(()=>{
 	let homecss,admincss,rescss,instacss
 	let init=x=>{
 		app.$.init(x);
-	}
+	};
 	let onCreate=()=>{
-		
 		setContentView();
-	}
+	};
 	let setContentView=()=>{
 		$.when(
 		$.getScript($.js()+'/admin/jieun.js'),
@@ -74,24 +73,26 @@ app=(()=>{
 		 homecss = '<link class="homecss" rel="stylesheet" type="text/css" href="/web/resources/css/home/homemain.css" />'
 			+'<link class="homecss" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i,700" rel="stylesheet">'
 			+'<link class="homecss" href="/web/resources/css/home/style.css" rel="stylesheet">';
+		
 		 admincss='<link class="admincss" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">'
 				+'<link class="admincss" href="/web/resources/css/admin/demo.css" rel="stylesheet">'
 				+'<link class="admincss" href="/web/resources/css/admin/main.css" rel="stylesheet">'
 				+'<link class="admincss" rel="stylesheet" href="/web/resources/css/admin/vendor/linearicons/style.css">'
 				+'<link class="admincss" rel="apple-touch-icon" sizes="76x76" href="resources/img/apple-icon.png">'
 				+'<link class="admincss" rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon.png">';
-		 rescss ='<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
+
+		 rescss ='<link class="rescss" href="/web/resources/css/reservation/vanillacalendar.css" rel="stylesheet">' //vanila js calender
+        	 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
  
+		 
 		 instacss ='  <link rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/style.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/animate.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/structure.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/docs.min.css"> '
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/modal.css"> '
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/default_css.css">';
-			 
-			 
 	}
 	let crawl=()=>{
 		alert('들어옴')
@@ -119,13 +120,10 @@ app=(()=>{
 })();
 
 app.$={
-		
 		init:x=>{
-			
 			$.getScript(x+'/resources/js/router.js',
 			()=>{
 				$.extend(new Session(x))
-				
 				app.onCreate(); 
 				
 			});
