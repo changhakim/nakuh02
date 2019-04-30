@@ -17,9 +17,8 @@ eycompo ={
 			+'</nav>'
 		},
 		
-		main_container: ()=>{
-			return '</br></br>'
-			+			'<div class="col-sm-4">'
+		/*main_container: ()=>{
+			return '<div class="col-sm-4">'
 			+'			<div id="item_container" class="left-widget-sidebar">'
 			+'				<div class="card-widget bg-white user-card">'
 			+'					<div class="u-img img-cover" style="background-image: url(/web/resources/img/reservation/joy.jpg);background-size:cover;"></div>'
@@ -93,7 +92,7 @@ eycompo ={
 			+'						</div>'
 			+'					</div>'
 			+'				</div>'
-			+'			</div>'},
+			+'			</div>'},*/
 
 		search_bar : ()=>{
 			return '<section class="newsletter">'
@@ -123,7 +122,7 @@ eycompo ={
 		          +'<form>'
 		            +'<fieldset>'
 		              +'<div class="col-md-4 col-sm-4 no-pad">'
-		                +'<input type="text" class="form-control border-right" placeholder="도시명" />'
+		              +'<input type="text" class="form-control border-right" placeholder="도시명" />'
 		              +'</div>'
 		              +'<div class="col-md-3 col-sm-3 no-pad">'
 		              +'<input type="text" class="form-control border-right id="datepicker">'
@@ -149,11 +148,12 @@ eycompo ={
 		    +'<!-- 검색창  끝-->'
 		    +''
 		    +'<!-- 메인 화면  -->'
+		    +'</br>'
+		    +'</br>'
 		    +'<div class="features">'
-		      +'<div id="main-container" class="container">'
-
-		      +'</div>'
+		    +'<div id="main-container" class="container">'
 		    +'</div>'
+		    +'</div></br></br>'
 		},
 		
 		item_container : ()=>{
@@ -176,6 +176,7 @@ eycompo ={
 			+'								</div>'
 			+'													<!-- /.panel-heading -->'
 			+'								<div class="panel-body">'
+			+'								<div id="datepicker"></div>'
 			+'                        <img src="https://static.collectui.com/shots/3633221/date-picker-large" alt="" class="img-responsive"></br></br>'
 			+'								</div>'
 			+'							</div>'
