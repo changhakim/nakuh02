@@ -12,12 +12,14 @@
  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<!--  modal -->
- <div id="id01" class="modal">
+
+ <!--  modal --->
+<div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
       <span class="close1" title="Close Modal">&times;</span>
     </div>
+
     <div class="container-fluid">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" id="userid" required>
@@ -32,15 +34,32 @@
     </div>
   </div>
 </div>
- <!-- Fullsize Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1"
-		role="dialog" 
-		aria-hidden="true">
-		<div class="modal-dialog modal-fullsize" role="document">
-			<div class="modal-content modal-fullsize"></div>
-		</div>
-	</div>
+
+<!-- modal-2 -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal-2 end-->
+
+
  <div id="wrapper" class="container-fluid">
+
  
 <div class="container-fluid">
  <!-- login -->	
@@ -338,6 +357,7 @@
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/custom.js"></script>     
 <!-- instanavjs -->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/instanav.js"></script>
+<script type="text/javascript" src="/web/resources/js/aquagram/vendor/instafeed.js"></script> <!-- instafeed.js 추후 미사용시 삭제. -->
 <!-- instajs -->
 <!-- Stickyjs --->
 <script type="text/javascript" src="/web/resources/js/aquagram/vendor/Sticky-kit.js"></script>
@@ -353,7 +373,7 @@
 <!-- jeongukjs -->
 <script src="<%=application.getContextPath()%>/resources/js/component/jwcompo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/aquagram/jeonguk.js"></script>  
-<!-- 낚어최종본---->
+<!-- 낚어안녕 -->
 </body>
 
 <script>

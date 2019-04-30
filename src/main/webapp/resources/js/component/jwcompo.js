@@ -25,7 +25,7 @@
 var jwcompo = jwcompo || {};
 jwcompo = {
 	commonnav :()=>{
-			return '<nav class="navbar navbar-inverse navbar-default" role="navigation" id="comnav" data-spy="affix" data-offset-top="525" style="width: 100%; height:50px; background-color: #fafafa; border: none; border-bottom: 1px solid; border-color: #ddd; border-radius: 0px; margin-bottom:0px;z-index:9999;">	  '
+			return '<nav class="navbar navbar-inverse navbar-default" role="navigation" id="comnav" data-spy="affix" data-offset-top="525" style="width: 100%; height:50px; background-color: #fafafa; border: none; border-bottom: 1px solid; border-color: #ddd; border-radius: 0px; margin-bottom:0px;z-index:8888;">	  '
 			+'<div class="container-fluid">'
 			+'<ul class="nav navbar-nav">'
 			+'      <li id="home"><a href="#">HOME</a></li>'
@@ -324,13 +324,13 @@ jwcompo = {
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
 			+'		<div>'
 			+'			<div> feed view</div>'
-			+'			<div id="my_fv"> 52 </div>'
+			+'			<div id="feed_fv"> 52 </div>'
 			+'		 </div>'
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
 			+'		<div>'
 			+'			<div> Article count</div>'
-			+'			<div> 4 </div>'
+			+'			<div id="my_fv"> 4 </div>'
 			+'		 </div>'
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
@@ -358,7 +358,7 @@ jwcompo = {
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
 			+'		<div>'
-			+'			<div id="art_upload" data-toggle="modal" data-target="#myModal">등록</div>'
+			+'			<div id="art_upload">등록</div>'
 			+'		 </div>'
 			+'		</li>'
 			+'    <li style="position: center; top:15px; margin-right: 25px;">'
@@ -377,7 +377,6 @@ jwcompo = {
 			+'  </ul>'
 			
 		},
-		
 		insta_base : ()=>{
 			return '<div class="instagram-wrap">'
 			+'          <div class="container">'
@@ -412,7 +411,8 @@ jwcompo = {
 			+'                              </div>'
 			+'                          </div>   <!--  target end -->'
 			
-		}, 
+		},
+	
 		photo_feed_css_hover :()=>{
 			return '<style>'
 			+'    @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");'
