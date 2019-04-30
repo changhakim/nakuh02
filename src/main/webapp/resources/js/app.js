@@ -81,8 +81,9 @@ app=(()=>{
 				+'<link class="admincss" rel="apple-touch-icon" sizes="76x76" href="resources/img/apple-icon.png">'
 				+'<link class="admincss" rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon.png">';
 		 rescss ='<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
-			 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
-			 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
+             +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
+             +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
+ 
 		 instacss ='  <link rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/style.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/animate.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/structure.css">'
