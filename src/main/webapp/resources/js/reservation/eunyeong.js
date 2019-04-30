@@ -74,9 +74,9 @@ eunyeong = (()=>{
             $('#logout').click(()=>{
                 
             });
-        
         })
-    }
+    };
+    
     let searchlist =()=>{
         $(s_ctt).remove();
         $(m_ctt).empty();
