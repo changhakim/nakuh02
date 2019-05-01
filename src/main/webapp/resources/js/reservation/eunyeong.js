@@ -20,6 +20,8 @@ eunyeong = (()=>{
     
     
     
+    
+    
     let onCreate =(x)=>{
         setContentView(x);
     }
