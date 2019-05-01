@@ -17,6 +17,9 @@ eunyeong = (()=>{
         onCreate(x);
     }
     
+    
+    
+    
     let onCreate =(x)=>{
         setContentView(x);
     }
@@ -30,7 +33,7 @@ eunyeong = (()=>{
             $(eycompo.main_search()).appendTo('#wrapper');
             
             css();
-            navcss();         
+            navcss(); 
             switch(x){
             case 'ocean':
                 ocean();
@@ -124,9 +127,12 @@ eunyeong = (()=>{
         $(s_ctt).remove();
         $(m_ctt).empty();
         $(eycompo.search_bar()).prependTo(m_ctt);
+        /*수정*/
+        prolist();
         $('button[type=button]').click(e=>{
             e.preventDefault();
-            $(eycompo.main_container()).appendTo(m_ctt);
+            $(m_ctt).empty();
+            prolist();
             $(i_ctt).click(function(){
                 alert('바다3상세화면');
                 item();
@@ -134,24 +140,31 @@ eunyeong = (()=>{
         });
     };
     
-    /*정보 : item*/
+    /*정보 : 상품 */
     let detail =()=>{
         $(s_ctt).remove();
         $(m_ctt).empty();
         $(eycompo.item_container()).appendTo(m_ctt);
-        $("#datepicker").datepicker();
-        $('div .ui-datepicker-prev ui-corner-all').remove;
-        
         $('button.btn[type=submit]').click(e=>{
-            alert('결제로 이동');
             payment();
         });
-    };
+   /*수정 */
+        $('#manual-ajax').click(function(event) {
+        	  event.preventDefault();
+        	  this.blur(); // Manually remove focus from clicked link.
+        	  $.get(this.href, function(html) {
+        	    $(html).appendTo('body').modal();
+        	  });
+        	});  
+      };
     
-    /*정보 : 결제 */
+    
+    
+    /*정보 : 결제모달 */
     let payment =()=>{
         alert('payment 진입');
         $(m_ctt).empty();
+        pay_modal();
     };
     
     /*상품 전체보기 */
@@ -166,7 +179,7 @@ eunyeong = (()=>{
             			+'		<div class="card-widget bg-white user-card">'
             			+'			<div class="u-img img-cover" style="background-image: url(/web/resources/img/reservation/joy.jpg);background-size:cover;"></div>'
             			+'					<div class="u-content"></br></br>'
-            			+'					<h5>' +j.company + '</h5>'
+            			+'					<h5>' + j.company + '</h5>'
             			+'					<p class="text-muted">' + j.price +'</p>'
             			+'					</div>'
             			+'					</div>'
@@ -182,7 +195,6 @@ eunyeong = (()=>{
     	});
     };
     
-    
     let navcss = ()=>{
         $(document).ready(function() {
              $('#comnav').affix({
@@ -194,12 +206,12 @@ eunyeong = (()=>{
     };
     
     let css = ()=>{
-         homecss ='<link class="homecss" rel="stylesheet" type="text/css" href="/web/resources/css/home/homemain.css" />'
+         homecss ='<link class="homecss" rel="stylesheet" type="text/css" href="/web/resources/css/home/homemain.css">'
             +'<link class="homecss" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i,700" rel="stylesheet">'
             +'<link class="homecss" href="/web/resources/css/home/style.css" rel="stylesheet">';
          
-         rescss ='<link class="rescss" href="/web/resources/css/reservation/vanillacalendar.css" rel="stylesheet">' //vanila js calender
-        	 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
+         rescss = '<link class="rescss" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />'
+		 	 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
  
@@ -210,5 +222,6 @@ eunyeong = (()=>{
              +' <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/default_css.css">';
              
     };
-    return {init:init, searchlist:searchlist, ocean:ocean, river:river, hotel:hotel, detail:detail, payment:payment, prolist:prolist};
+    return {init:init, searchlist:searchlist, ocean:ocean, river:river, hotel:hotel, detail:detail, 
+    		payment:payment, prolist:prolist};
 })();
