@@ -14,7 +14,7 @@
 </head>
 <body>
 
- <!--  modal --->
+ <!--  modal ---->
 <div id="id01" class="modal">
   <div class="modal-content animate" action="#">
     <div class="imgcontainer raw">
