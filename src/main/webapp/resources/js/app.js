@@ -80,13 +80,12 @@ app=(()=>{
 				+'<link class="admincss" rel="stylesheet" href="/web/resources/css/admin/vendor/linearicons/style.css">'
 				+'<link class="admincss" rel="apple-touch-icon" sizes="76x76" href="resources/img/apple-icon.png">'
 				+'<link class="admincss" rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon.png">';
-
-		 rescss ='<link class="rescss" href="/web/resources/css/reservation/vanillacalendar.css" rel="stylesheet">' //vanila js calender
-        	 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
+	
+         rescss = '<link class="rescss" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />'
+		 	 +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/common.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/main.css">'
              +'<link class="rescss" rel="stylesheet" href="/web/resources/css/reservation/navbar.css">';
- 
-		 
+	 
 		 instacss ='  <link rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/style.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/animate.css">'
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/structure.css">'
@@ -94,6 +93,7 @@ app=(()=>{
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/modal.css"> '
 			 +'  <link class="instacss" rel="stylesheet" type="text/css" href="/web/resources/css/aquagram/default_css.css">';
 	}
+	
 	let crawl=()=>{
 		alert('들어옴')
 		 $.ajax({
